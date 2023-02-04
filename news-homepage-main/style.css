@@ -1,0 +1,141 @@
+@font-face {
+    font-family:"Inter-Bold";
+    src: url(Inter-VariableFont_slnt,wght.ttf);
+}
+
+
+
+main{
+    margin-left: 10rem;
+    margin-right: 10rem;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+}
+/*   NavBar   */
+nav{
+    display: flex;
+}
+
+.logo{
+    max-width: 5rem;
+    max-height: 5rem;
+    
+}
+
+.menu{
+    display: flex;
+    justify-content: right;
+    max-width: 25rem;
+    margin-top: 0.7rem;
+    margin-left: 29.7rem;
+}
+
+li{
+    margin-left: 2rem;
+    list-style: none;
+}
+
+li > a{
+    text-decoration: none;
+    color:hsl(236, 13%, 42%)
+}
+
+li > a:hover{
+    color: hsl(35, 77%, 62%);
+}
+
+/* Section */
+
+section{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1;
+    gap: 1.5rem;
+    margin-top: 2rem;
+    
+}
+
+.mainImg{
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 1;
+}
+
+img{
+    width: 100%;
+    height: 100%;
+}
+
+/* SideBar */
+
+.sideTextContainer{
+    background: hsl(240, 100%, 5%);
+    grid-row-start: 1;
+    grid-row-end: 3;
+    
+}
+
+.sideText{
+    margin-left: 2rem;
+    margin-right: 2rem;
+    margin-bottom: 2rem;
+    height: 20rem;
+}
+
+.sideText h1 {
+    color: hsl(35, 77%, 62%);
+    font-size: 2rem;
+    font-family:"Inter-Bold";
+    font-weight: 600;
+}
+
+.sideText div h3 {
+    color: white;
+    font-family: "Inter-Bold";
+    font-weight: 700;
+    font-size: 1.1rem;
+}
+
+.sideText div p{
+    color:hsl(233, 8%, 79%);
+    font-size: 0.8rem;
+    font-family: "Inter-Bold";
+    font-weight: 300;
+} 
+
+.bar{
+    border: solid 1px hsl(236, 13%, 42%);
+    border-radius: 12px;
+    margin-bottom: 1.5rem;
+    margin-top: 1.5rem;
+}
+
+/* Text */
+
+.articleTitle h1{
+    font-size: 3.1rem;
+    font-family: "Inter-Bold";
+    font-weight: 800;
+    margin-top: 0rem;
+    margin-bottom: 0rem;
+}
+
+.articleText p{
+    font-family: "Inter-Bold";
+    font-weight: 300;
+    color: hsl(236, 13%, 42%);
+    font-size: 1rem;
+    margin-top: 0.6rem;
+}   
+
+button{
+    background: hsl(5, 85%, 63%);
+    border: none;
+    width: 50%;
+    height: 2.5rem;
+    color: white;
+    font-family: "Inter-Bold";
+    font-weight: 600;
+    margin-top: 0.81rem;
+}
