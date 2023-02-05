@@ -6,8 +6,8 @@
 
 
 main{
-    margin-left: 10rem;
-    margin-right: 10rem;
+    margin-left: 8rem;
+    margin-right: 8rem;
     margin-top: 3rem;
     margin-bottom: 3rem;
 }
@@ -25,9 +25,8 @@ nav{
 .menu{
     display: flex;
     justify-content: right;
-    max-width: 25rem;
     margin-top: 0.7rem;
-    margin-left: 29.7rem;
+    margin-left: 33rem;
 }
 
 li{
@@ -102,13 +101,15 @@ img{
     font-size: 0.8rem;
     font-family: "Inter-Bold";
     font-weight: 300;
+    line-height: 1.5rem;
 } 
 
 .bar{
-    border: solid 1px hsl(236, 13%, 42%);
-    border-radius: 12px;
+    border: solid 0.1rem hsl(240, 100%, 5%);
+    border-radius: 20px;
     margin-bottom: 1.5rem;
     margin-top: 1.5rem;
+    box-shadow: 1px 1px 2px hsl(236, 13%, 42%);
 }
 
 /* Text */
@@ -138,4 +139,57 @@ button{
     font-family: "Inter-Bold";
     font-weight: 600;
     margin-top: 0.81rem;
+}
+
+/* Footer */
+
+footer{
+    height: 7.5rem;
+    margin-top: 4rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 2rem
+}
+
+.footerContainer{
+    display: flex;
+    
+}
+
+.footerImg{
+    width: 6rem;
+    height: 7.5rem;
+}
+
+img{
+    width: 100%;
+    height: 100%;
+}
+
+.footerText h1{
+    margin: 0;
+    margin-left: 0.9rem;
+    font-family: "Inter-Bold";
+    font-size: 1.7rem;
+    color: hsl(233, 8%, 79%);
+    font-weight: 700;
+}
+
+.footerText h3{
+    font-family: "Inter-Bold";
+    margin: 0;
+    margin-left: 0.9rem;
+    margin-top: 0.4rem;
+    font-size: 0.9rem;
+}
+
+.footerText p{
+    font-family: "Inter-Bold";
+    margin: 0;
+    margin-left: 0.9rem;
+    color: hsl(236, 13%, 42%);
+    font-size: 0.8rem;
+    margin-top: 0.5rem;
+    line-height: 1.3rem;
+    font-weight: 500;
 }
