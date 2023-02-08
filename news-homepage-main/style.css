@@ -3,30 +3,51 @@
     src: url(Inter-VariableFont_slnt,wght.ttf);
 }
 
+body{
+    display: grid;
+}
 
 
 main{
-    margin-left: 8rem;
-    margin-right: 8rem;
-    margin-top: 3rem;
-    margin-bottom: 3rem;
+    max-width: 75rem;
+    max-height: 50rem;
+    justify-self: center;
+    margin-bottom: 2rem;
 }
-/*   NavBar   */
+/*   Header   */
+header{
+    display: inline-block;
+    width: 100%;
+    position: relative;
+}
+
+.toggle-btn{
+    display: inline-block;
+    height: 1rem;
+    position: absolute;
+    right: 1rem;
+    top:1rem;
+    display: none;
+}
+
 nav{
     display: flex;
+    float: right;
+    margin-top: 0.8rem;
 }
 
 .logo{
     max-width: 5rem;
     max-height: 5rem;
-    
+    float: left;
 }
 
 .menu{
     display: flex;
-    justify-content: right;
-    margin-top: 0.7rem;
-    margin-left: 33rem;
+    justify-self: end;
+    margin:auto;
+    margin-right: 0px;
+    
 }
 
 li{
@@ -39,9 +60,7 @@ li > a{
     color:hsl(236, 13%, 42%)
 }
 
-li > a:hover{
-    color: hsl(35, 77%, 62%);
-}
+
 
 /* Section */
 
@@ -68,6 +87,7 @@ img{
 
 /* SideBar */
 
+
 .sideTextContainer{
     background: hsl(240, 100%, 5%);
     grid-row-start: 1;
@@ -93,12 +113,12 @@ img{
     color: white;
     font-family: "Inter-Bold";
     font-weight: 700;
-    font-size: 1.1rem;
+    font-size: 1.4rem;
 }
 
 .sideText div p{
     color:hsl(233, 8%, 79%);
-    font-size: 0.8rem;
+    font-size: 1rem;
     font-family: "Inter-Bold";
     font-weight: 300;
     line-height: 1.5rem;
@@ -139,6 +159,8 @@ button{
     font-family: "Inter-Bold";
     font-weight: 600;
     margin-top: 0.81rem;
+    letter-spacing: 0.3rem;
+    font-size: 0.8rem;
 }
 
 /* Footer */
@@ -192,4 +214,146 @@ img{
     margin-top: 0.5rem;
     line-height: 1.3rem;
     font-weight: 500;
+}
+
+/* Hover */
+
+li > a:hover{
+    color: hsl(35, 77%, 62%);
+}
+
+button:hover{
+    background: black;
+    cursor: pointer;
+    
+}
+
+a{
+    text-decoration:none;
+    color: inherit;
+}
+
+@media only screen and (max-width: 1200px) {
+    
+    .sideText h1 {
+        font-size: 1.8rem;
+    }
+    
+    .sideText div h3 {
+        font-size: 1.1rem;
+    }
+    
+    .sideText div p{
+        font-size: 0.9rem;
+        line-height: 1.5rem;
+    } 
+    
+    .bar{
+        border: solid 0.1rem hsl(240, 100%, 5%);
+        border-radius: 20px;
+        margin-bottom: 1.5rem;
+        margin-top: 1.5rem;
+    }
+  }
+
+  @media only screen and (max-width: 1020px) {
+    
+    .sideText h1 {
+        font-size: 1.5rem;
+    }
+    
+    .sideText div h3 {
+        font-size: 0.9rem;
+    }
+    
+    .sideText div p{
+        font-size: 0.8rem;
+        line-height: 1.1rem;
+    } 
+    
+    .bar{
+        margin-bottom: 0rem;
+        margin-top: 0rem;
+    }
+
+    .articleTitle h1{
+        font-size: 2.84rem;
+        margin-top: 0rem;
+        margin-bottom: 0rem;
+    }
+
+    .footerText h1{
+        margin: 0;
+        margin-left: 0.9rem;
+        font-size: 1.4rem;
+        font-weight: 700;
+    }
+    
+    .footerText h3{
+        margin: 0;
+        margin-left: 0.9rem;
+        margin-top: 0.4rem;
+        font-size: 0.8rem;
+    }
+    
+    .footerText p{
+        margin: 0;
+        margin-left: 0.9rem;
+        font-size: 0.7rem;
+        margin-top: 0.5rem;
+        line-height: 1.3rem;
+    }
+
+    .footerImg{
+        width: 8rem;
+    }
+
+
+    br{
+        display: none;
+    }
+  }
+  @media (max-width: 900px) {
+    .toggle-btn{
+        display: block;
+    }
+    nav{
+        display: none;
+        position: absolute;
+        top: -1.3rem;
+        right: 0rem;
+
+    }
+    nav.show{
+        display: block;
+    }
+    /* grid */
+    main{
+        width: 20rem;
+        height: auto;
+    }
+    section{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .sideTextContainer{
+        order: 3;
+    }
+
+    footer{
+        display: flex;
+        flex-direction: column;
+        margin-top: 1rem;
+    }
+
+    #laptopimg{
+        width: 6.53rem;
+    }
+    
+    #padImg{
+        width: 7.291rem;
+    }
+
+
 }
