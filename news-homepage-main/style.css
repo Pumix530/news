@@ -13,21 +13,26 @@ main{
     max-height: 50rem;
     justify-self: center;
     margin-bottom: 2rem;
+    position: relative;
+    margin-left: 0;
+    width: auto;
+    height: auto;
 }
 /*   Header   */
 header{
     display: inline-block;
     width: 100%;
-    position: relative;
+    
 }
 
 .toggle-btn{
-    display: inline-block;
     height: 1rem;
-    position: absolute;
-    right: 1rem;
+    position: block;
+    float: right;
+    margin-top: 0.7rem;
     top:1rem;
     display: none;
+    
 }
 
 nav{
@@ -104,7 +109,7 @@ img{
 
 .sideText h1 {
     color: hsl(35, 77%, 62%);
-    font-size: 2rem;
+    font-size: 1.8rem;
     font-family:"Inter-Bold";
     font-weight: 600;
 }
@@ -233,6 +238,67 @@ a{
     color: inherit;
 }
 
+.toggleMenu > li > a:hover{
+    color: hsl(35, 77%, 62%);
+}
+
+/* Toggle-Nav */
+
+.toggle-nav{
+    position: fixed;   
+    height: 100%;
+    width: auto;
+    top:0;
+}
+
+.navDiv{
+    width: ;
+    height: 100%;
+    background: white;
+    opacity: 100%;
+    float: right;
+}
+
+.blurDiv{
+    width:  5rem;
+    height: 100%;
+    background: black;
+    opacity: 0.5;
+    float: left;
+}
+
+.closeBtn{
+    height: 2rem;
+    width: 2rem;
+    position: block;
+    float: right;
+    margin-top: 1rem;
+    top: 3rem;
+    cursor: pointer;
+}
+
+.toggleMenu{
+    margin:0;
+    position: absolute;
+    left: 3.5rem;
+    top: 6rem;
+    line-height: 2.5rem;
+}
+
+.toggleMenu > li > a {
+    font-family: "Inter-Bold";
+    color: black;
+    font-weight: 500;
+}
+
+
+
+#navbar{
+    display: none;
+}
+
+
+
 @media only screen and (max-width: 1200px) {
     
     .sideText h1 {
@@ -258,6 +324,106 @@ a{
 
   @media only screen and (max-width: 1020px) {
     
+    .sideText h1 {
+        font-size: 1.9rem;
+        margin-bottom: 2.3rem;
+    }
+    
+    .sideText div h3 {
+        font-size: 1.3rem;
+    }
+    
+    .sideText div p{
+        font-size: 0.9rem;
+        line-height: 1.1rem;
+    } 
+    
+    .bar{
+        margin-bottom: 2rem;
+        margin-top: 2rem;
+    }
+
+    .articleTitle h1{
+        font-size: 2.84rem;
+        margin-top: 0rem;
+        margin-bottom: 0rem;
+    }
+
+    .footerText h1{
+        margin: 0;
+        margin-left: 0.9rem;
+        font-size: 1.4rem;
+        font-weight: 700;
+    }
+    
+    .footerText h3{
+        margin: 0;
+        margin-left: 0.9rem;
+        margin-top: 0.4rem;
+        font-size: 0.8rem;
+    }
+    
+    .footerText p{
+        margin: 0;
+        margin-left: 0.9rem;
+        font-size: 0.7rem;
+        margin-top: 0.5rem;
+        line-height: 1.3rem;
+    }
+
+    .footerImg{
+        width: 8rem;
+    }
+
+
+    br{
+        display: none;
+    }
+  }
+  @media (max-width: 700px) {
+    
+    
+    .toggle-btn{
+        display: block;
+    }
+    nav{
+        display: none;
+        position: absolute;
+        top: -1.3rem;
+        right: 0rem;
+
+    }
+    nav.show{
+        display: block;
+    }
+    /* grid */
+    main{
+        width: 20rem;
+        height: auto;
+    }
+    section{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .sideTextContainer{
+        order: 3;
+    }
+
+    footer{
+        display: flex;
+        flex-direction: column;
+        margin-top: 1rem;
+    }
+
+    #laptopimg{
+        width: 6.53rem;
+    }
+    
+    #padImg{
+        width: 7.291rem;
+    }
+
     .sideText h1 {
         font-size: 1.5rem;
     }
@@ -305,55 +471,41 @@ a{
     }
 
     .footerImg{
-        width: 8rem;
+        width: auto;
     }
 
+    #laptopimg{
+        width: 5.9rem;
+    }
+    
+    #padImg{
+        width: 6rem;
+    }
 
     br{
         display: none;
     }
-  }
-  @media (max-width: 900px) {
-    .toggle-btn{
-        display: block;
-    }
-    nav{
-        display: none;
-        position: absolute;
-        top: -1.3rem;
-        right: 0rem;
 
+    .sideText{
+        height: 22rem;
     }
-    nav.show{
-        display: block;
-    }
-    /* grid */
     main{
-        width: 20rem;
+       width: auto;
+    }
+
+}
+@media only screen and (max-width: 400px){
+    main{
+        margin-left: 0;
+        width: auto;
         height: auto;
-    }
-    section{
-        display: flex;
-        flex-direction: column;
-    }
-
-    .sideTextContainer{
-        order: 3;
-    }
-
-    footer{
-        display: flex;
-        flex-direction: column;
-        margin-top: 1rem;
     }
 
     #laptopimg{
-        width: 6.53rem;
+        width: 4.8rem;
     }
     
     #padImg{
-        width: 7.291rem;
+        width: 5.5rem;
     }
-
-
 }

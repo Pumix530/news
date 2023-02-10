@@ -1,7 +1,4 @@
-function myFunction(){
-    var nevbar = document.getElementById('nav');
-    nevbar.classList.toggle('show')
-  }
+
 
 // SideBar
 
@@ -69,3 +66,18 @@ footerText1.addEventListener('mouseover', function handleMouseOver() {
   footerText3.addEventListener('mouseout', function handleMouseOver() {
     footerTitle3.style.color = 'black';
   });
+
+
+  const targetDiv = document.getElementById("navbar");
+  const btn = document.getElementById("toggle");
+  const btnClose = document.getElementById('closeBtn')
+  btn.onclick = function () {
+      targetDiv.style.display = "block";
+  };
+
+  btnClose.onclick = function () {
+    targetDiv.style.display = "none";
+  }
+  
+
+    
