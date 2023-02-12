@@ -247,12 +247,13 @@ a{
 .toggle-nav{
     position: fixed;   
     height: 100%;
-    width: 100%;
+    width: 101%;
     top:0;
+    margin-left: -1rem;
 }
 
 .navDiv{
-    width: 65%;
+    width: 64%;
     height: 100%;
     background: white;
     opacity: 100%;
@@ -265,6 +266,8 @@ a{
     background: black;
     opacity: 0.5;
     float: left;
+    padding-left: 1%;
+    
 }
 
 .closeBtn{
@@ -326,22 +329,22 @@ a{
   @media only screen and (max-width: 1020px) {
     
     .sideText h1 {
-        font-size: 1.9rem;
-        margin-bottom: 2.3rem;
+        font-size: 1.6rem;
+        margin-bottom: 1.2rem;
     }
     
     .sideText div h3 {
-        font-size: 1.3rem;
+        font-size: 0.9rem;
     }
     
     .sideText div p{
-        font-size: 0.9rem;
+        font-size: 0.7rem;
         line-height: 1.1rem;
     } 
     
     .bar{
-        margin-bottom: 2rem;
-        margin-top: 2rem;
+        margin-bottom: 0rem;
+        margin-top: 0rem;
     }
 
     .articleTitle h1{
@@ -353,7 +356,7 @@ a{
     .footerText h1{
         margin: 0;
         margin-left: 0.9rem;
-        font-size: 1.4rem;
+        font-size: 1rem;
         font-weight: 700;
     }
     
@@ -379,6 +382,10 @@ a{
 
     br{
         display: none;
+    }
+
+    .sideTextContainer{
+    height: 27.5rem;
     }
   }
   @media (max-width: 700px) {
@@ -409,6 +416,8 @@ a{
 
     .sideTextContainer{
         order: 3;
+        height: 23rem;
+        
     }
 
     footer{
@@ -509,4 +518,12 @@ a{
     #padImg{
         width: 5.5rem;
     }
+
+    
+}
+
+@media only screen and (max-width: 300px){
+    .sideTextContainer{
+        min-height: 30rem;
+    }  
 }
